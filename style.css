@@ -1,35 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-
 }
-.container{
-    width: 100px;
+
+body {
+    background: #f1f1f1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg,#153677,#4e085f);
+    background: linear-gradient(135deg, #153677, #4e085f);
     padding: 10px;
 }
-.todo-app{
-    width: 100px;
+
+.todo-app {
+    width: 100%;
     max-width: 540px;
     background: #fff;
-    margin: 100px auto 20px;
-    padding: 40px 30px 70px;
+    margin: 20px auto;
+    padding: 40px 30px 30px;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-.todo-app h2{
+
+.todo-app h2 {
     color: #002765;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-size: 24px;
 }
-.todo-app h2 img{
+
+.todo-app h2 img {
     width: 30px;
     margin-left: 10px;
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,10 +50,57 @@
     padding-left: 20px;
     margin-bottom: 25px;
 }
-input{
+
+input {
     flex: 1;
     border: none;
     outline: none;
     background: transparent;
-    padding: 10PX;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+button {
+    background-color: #4e085f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #682b8d;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+ul li button {
+    background: #ff3b3b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul li button:hover {
+    background: #e60000;
 }
